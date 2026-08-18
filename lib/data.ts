@@ -16,17 +16,17 @@ export type SkillGroup = {
 
 // Datos del perfil. Edita estos valores con tu informacion.
 export const profile = {
-  name: 'Tu Nombre',
-  role: 'Desarrollador de Software',
-  location: 'Ciudad, Pais',
-  email: 'hola@tucorreo.com',
+  name: 'Facundo',
+  role: 'Desarrollador Full Stack Junior',
+  location: 'Mendoza, Argentina',
+  email: 'facundopalavecino054@gmail.com',
   bio: 'Desarrollador enfocado en crear productos web rapidos, accesibles y bien construidos. Me gusta transformar ideas en interfaces claras y sistemas escalables, cuidando tanto el detalle visual como la calidad del codigo.',
   bioExtra:
     'Actualmente busco proyectos donde pueda aportar en el frontend y el backend, aprender de gente con experiencia y seguir creciendo como profesional.',
   photo: '/profile.png',
   socials: {
-    github: 'https://github.com/',
-    linkedin: 'https://www.linkedin.com/',
+    github: 'https://github.com/palavecino12',
+    linkedin: 'https://www.linkedin.com/in/facundo-palavecino-886979377/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYr2mCHxAT0yvMKMFrVEFLg%3D%3D',
   },
 }
 

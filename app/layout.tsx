@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${inter.variable} ${spaceGrotesk.variable} bg-background`}
+      className={`${inter.variable} ${spaceGrotesk.variable} bg-background scroll-smooth  `}
     >
       <body className="font-sans antialiased">
         {children}
