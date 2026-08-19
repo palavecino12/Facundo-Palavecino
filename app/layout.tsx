@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Desarrollador',
+  title: 'Facundo Palavecino',
   description:
     'Portfolio de desarrollador de software. Proyectos, habilidades y contacto.',
   generator: 'v0.app',
