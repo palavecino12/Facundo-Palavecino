@@ -36,16 +36,16 @@ export function About() {
             <div className="relative w-fit">
               <div
                 aria-hidden="true"
-                className="absolute inset-0 -z-10 translate-x-4 translate-y-4 rounded-3xl border border-primary/40"
+                className="absolute inset-0 -z-10 translate-x-3 translate-y-3 rounded-3xl border border-primary/40"
               />
 
               <Image
                 src={profile.photo || '/placeholder.svg'}
                 alt={`Foto de ${profile.name}`}
-                width={320}
-                height={400}
+                width={260}
+                height={320}
                 priority
-                className="h-[360px] w-[300px] rounded-3xl object-cover"
+                className="h-[280px] w-[240px] rounded-3xl object-cover"
               />
             </div>
           </div>

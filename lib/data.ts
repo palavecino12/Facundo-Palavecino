@@ -50,7 +50,7 @@ export const projects: Project[] = [
       'Aplicación web de autoservicio para un kiosco que permite escanear productos, gestionar el carrito y realizar compras de forma autónoma. Desarrollé el backend con Node.js y Express e integré Mercado Pago para procesar las ventas, validar stock y actualizar las operaciones de forma segura. Proyecto grupal desarrollado bajo metodología Scrum, donde también desempeñé el rol de Scrum Master. Proyecto actualmente en uso.',
     image: '/project-2.png',
     tags: ['React', 'TypeScript', 'Node.js', 'Express', 'Prisma', 'MySQL', 'Zod', 'Mercado Pago'],
-    demoUrl: '#',
+    demoUrl: 'https://www.linkedin.com/posts/facundo-palavecino-886979377_react-typescript-nodejs-activity-7495893548463116291-9LEP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF051KYBKPhvcdVesk8kCzNn-UB7ItP6Vlg',
     repoUrl: 'https://github.com/palavecino12/Zapi',
     year: '2026',
   },
