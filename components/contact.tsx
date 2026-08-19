@@ -15,7 +15,7 @@ export function Contact() {
           <div className="relative z-10 mx-auto max-w-xl">
             <p className="font-mono text-sm text-primary">04 — Contacto</p>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-balance md:text-4xl">
-              ¿Tienes un proyecto en mente?
+              Conectemos
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground text-pretty">
               Estoy abierto a colaboraciones, oportunidades laborales o

@@ -6,7 +6,10 @@ import { SectionHeading } from '@/components/section-heading'
 
 export function Projects() {
   return (
-    <section id="proyectos" className="scroll-mt-20 py-20 md:py-28">
+    <section
+      id="proyectos"
+      className="pt-8 pb-20 md:pt-10 md:pb-28"
+    >
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="03 — Proyectos"
@@ -35,6 +38,7 @@ export function Projects() {
                   <h3 className="font-display text-xl font-semibold">
                     {project.title}
                   </h3>
+
                   <span className="font-mono text-xs text-muted-foreground">
                     {project.year}
                   </span>
@@ -63,10 +67,11 @@ export function Projects() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-opacity hover:opacity-80"
                     >
-                      Ver demo
+                      Ver detalles y video
                       <ArrowUpRight className="size-4" />
                     </a>
                   ) : null}
+
                   {project.repoUrl ? (
                     <a
                       href={project.repoUrl}

@@ -17,10 +17,10 @@ export type SkillGroup = {
 // Datos del perfil. Edita estos valores con tu informacion.
 export const profile = {
   name: 'Facundo',
-  role: 'Desarrollador Full Stack Junior',
+  role: '< Desarrollador Full Stack />',
   location: 'Mendoza, Argentina',
   email: 'facundopalavecino054@gmail.com',
-  bio: 'Desarrollador enfocado en crear productos web rapidos, accesibles y bien construidos. Me gusta transformar ideas en interfaces claras y sistemas escalables, cuidando tanto el detalle visual como la calidad del codigo.',
+  bio: 'Desarrollador enfocado en crear soluciones web escalables, mantenibles y de alto rendimiento. Transformo requerimientos en arquitecturas sólidas y limpias, priorizando el trabajo en equipo, las buenas prácticas y una excelente experiencia de usuario.',
   bioExtra:
     'Actualmente busco proyectos donde pueda aportar en el frontend y el backend, aprender de gente con experiencia y seguir creciendo como profesional.',
   photo: '/profile.png',
@@ -33,40 +33,40 @@ export const profile = {
 // Para agregar un proyecto nuevo, solo copia un objeto y agregalo al arreglo.
 export const projects: Project[] = [
   {
-    slug: 'dashboard-analytics',
-    title: 'Panel de Analiticas',
+    slug: 'dooria',
+    title: 'Dooria',
     description:
-      'Dashboard interactivo para visualizar metricas en tiempo real, con graficas, filtros dinamicos y modo oscuro. Enfocado en rendimiento y una experiencia de usuario fluida.',
+      'Aplicación web de control de acceso residencial mediante reconocimiento facial. Permite gestionar residentes y permisos de acceso, realizar reconocimiento facial en tiempo real y visualizar remotamente el dispositivo de ingreso mediante comunicación en tiempo real y transmisión de video. Proyecto personal.',
     image: '/project-1.png',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Recharts'],
-    demoUrl: '#',
-    repoUrl: '#',
-    year: '2025',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'Zod', 'MongoDB', 'face-api.js', 'WebRTC', 'Socket.IO'],
+    demoUrl: 'https://lnkd.in/p/deyXTix8',
+    repoUrl: 'https://github.com/palavecino12/Dooria',
+    year: '2026',
   },
   {
-    slug: 'gestor-tareas',
-    title: 'Gestor de Tareas',
+    slug: 'zapi',
+    title: 'Zapi',
     description:
-      'Aplicacion para organizar tareas y proyectos con arrastrar y soltar, recordatorios y sincronizacion. Disenada mobile-first con una interfaz limpia y minimalista.',
+      'Aplicación web de autoservicio para un kiosco que permite escanear productos, gestionar el carrito y realizar compras de forma autónoma. Desarrollé el backend con Node.js y Express e integré Mercado Pago para procesar las ventas, validar stock y actualizar las operaciones de forma segura. Proyecto grupal desarrollado bajo metodología Scrum, donde también desempeñé el rol de Scrum Master. Proyecto actualmente en uso.',
     image: '/project-2.png',
-    tags: ['React', 'Node.js', 'PostgreSQL', 'Prisma'],
+    tags: ['React', 'TypeScript', 'Node.js', 'Express', 'Prisma', 'MySQL', 'Zod', 'Mercado Pago'],
     demoUrl: '#',
-    repoUrl: '#',
-    year: '2024',
+    repoUrl: 'https://github.com/palavecino12/Zapi',
+    year: '2026',
   },
 ]
 
 export const skillGroups: SkillGroup[] = [
   {
     category: 'Frontend',
-    skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML', 'CSS'],
+    skills: ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS', 'Zod'],
   },
   {
     category: 'Backend',
-    skills: ['Node.js', 'Express', 'PostgreSQL', 'Prisma', 'REST APIs'],
+    skills: ['Node.js', 'Express', 'REST APIs', 'Prisma', 'MySQL', 'MongoDB', 'Zod'],
   },
   {
     category: 'Herramientas',
-    skills: ['Git', 'GitHub', 'Figma', 'Vercel', 'Docker'],
+    skills: ['Git', 'GitHub', 'Postman', 'Figma', 'Trello'],
   },
 ]

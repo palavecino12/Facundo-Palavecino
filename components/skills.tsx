@@ -3,7 +3,10 @@ import { SectionHeading } from '@/components/section-heading'
 
 export function Skills() {
   return (
-    <section id="habilidades" className="scroll-mt-20 py-20 md:py-28">
+    <section
+      id="habilidades"
+      className="pt-8 pb-20 md:pt-10 md:pb-28"
+    >
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="02 — Habilidades"
@@ -20,6 +23,7 @@ export function Skills() {
               <h3 className="font-display text-lg font-semibold">
                 {group.category}
               </h3>
+
               <ul className="mt-4 flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <li

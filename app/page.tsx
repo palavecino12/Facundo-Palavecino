@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <div id="inicio" className="min-h-screen">
       <Navbar />
-      <main>
+      <main className="pb-20 md:pb-0">
         <About />
         <Skills />
         <Projects />
