@@ -8,9 +8,6 @@ export function Footer() {
           © {new Date().getFullYear()} {profile.name}. Todos los derechos
           reservados.
         </p>
-        <p className="font-mono text-xs">
-          Hecho con Next.js y Tailwind CSS
-        </p>
       </div>
     </footer>
   )

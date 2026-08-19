@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ArrowDown, Mail, MapPin } from 'lucide-react'
+import { ArrowDown, Download, Mail, MapPin } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/components/brand-icons'
 import { profile } from '@/lib/data'
 
@@ -61,8 +61,18 @@ export function About() {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="#proyectos"
+              href="/CV-Facundo-Palavecino.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              Consultar CV
+              <Download className="size-4" />
+            </a>
+
+            <a
+              href="#proyectos"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary"
             >
               Ver proyectos
               <ArrowDown className="size-4" />
