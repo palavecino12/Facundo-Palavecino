@@ -19,27 +19,11 @@ const links: NavLink[] = [
 ]
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
   const [activeTab, setActiveTab] = useState(links[0].href)
 
   const isManualScroll = useRef(false)
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-  const headerRef = useRef<HTMLElement>(null)
-
-  // Detecta el scroll para añadir fondo/borde al header en Desktop
-  useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 16)
-    }
-
-    onScroll()
-
-    window.addEventListener('scroll', onScroll, { passive: true })
-
-    return () => {
-      window.removeEventListener('scroll', onScroll)
-    }
-  }, [])
+  const desktopNavRef = useRef<HTMLElement>(null)
 
   // IntersectionObserver para activar la sección correspondiente
   useEffect(() => {
@@ -92,10 +76,10 @@ export function Navbar() {
         '(min-width: 768px)',
       ).matches
 
-      // En desktop descontamos solamente la altura del navbar.
-      // En mobile no necesitamos ningún offset superior.
-      const headerHeight = headerRef.current?.offsetHeight ?? 0
-      const offset = isDesktop ? headerHeight : 0
+      // En desktop el nav flota arriba, así que igual conviene dejarle
+      // un margen para que la sección no quede pegada al borde.
+      const navHeight = desktopNavRef.current?.offsetHeight ?? 0
+      const offset = isDesktop ? navHeight + 24 : 0
 
       // Posición actual de la sección respecto al viewport
       const elementPosition =
@@ -122,18 +106,13 @@ export function Navbar() {
 
   return (
     <>
-      {/* Header Desktop */}
-      <header
-        ref={headerRef}
-        className={cn(
-          'fixed inset-x-0 top-0 z-50 hidden transition-all duration-300 md:block',
-          scrolled
-            ? 'border-b border-border bg-background/80 shadow-sm backdrop-blur-md'
-            : 'border-b border-transparent bg-transparent',
-        )}
-      >
-        <nav className="mx-auto flex max-w-6xl items-center justify-center px-6 py-4">
-          <ul className="flex items-center gap-1 rounded-full border border-border/60 bg-secondary/40 p-1 backdrop-blur-sm">
+      {/* Navigation Desktop: flotante arriba, con texto */}
+      <div className="fixed inset-x-0 top-4 z-50 hidden justify-center px-4 md:flex">
+        <nav
+          ref={desktopNavRef}
+          className="rounded-full border border-border/80 bg-background/10 p-1.5 shadow-lg backdrop-blur-md"
+        >
+          <ul className="flex items-center gap-1">
             {links.map((link) => {
               const isActive = activeTab === link.href
               const Icon = link.icon
@@ -173,11 +152,11 @@ export function Navbar() {
             })}
           </ul>
         </nav>
-      </header>
+      </div>
 
-      {/* Navigation Mobile */}
+      {/* Navigation Mobile: flotante abajo, solo íconos */}
       <div className="fixed inset-x-0 bottom-4 z-50 flex justify-center px-4 md:hidden">
-        <nav className="w-full max-w-md rounded-full border border-border/80 bg-background/90 p-1.5 shadow-lg backdrop-blur-md">
+        <nav className="w-full max-w-md rounded-full border border-border/80 bg-background/10 p-1.5 shadow-lg backdrop-blur-md">
           <ul className="flex items-center justify-around">
             {links.map((link) => {
               const isActive = activeTab === link.href
