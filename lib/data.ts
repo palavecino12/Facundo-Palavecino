@@ -20,7 +20,7 @@ export const profile = {
   role: '< Desarrollador Full Stack />',
   location: 'Mendoza, Argentina',
   email: 'facundopalavecino054@gmail.com',
-  bio: 'Desarrollador enfocado en crear soluciones web escalables, mantenibles y de alto rendimiento. Transformo requerimientos en arquitecturas sólidas y limpias, priorizando el trabajo en equipo, las buenas prácticas y una excelente experiencia de usuario.',
+  bio: 'Desarrollador enfocado en crear soluciones web escalables, mantenibles y de alto rendimiento. Integro Inteligencia Artificial en mi flujo de trabajo para acelerar la productividad, optimizar código y acelerar entregas. Transformo requerimientos en arquitecturas sólidas y limpias, priorizando las buenas prácticas y una excelente experiencia de usuario.',
   bioExtra:
     'Actualmente busco proyectos donde pueda aportar en el frontend y el backend, aprender de gente con experiencia y seguir creciendo como profesional.',
   photo: '/profile.png',
