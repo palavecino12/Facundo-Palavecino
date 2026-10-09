@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { ArrowDown, Download, Mail, MapPin } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/components/brand-icons'
 import { profile } from '@/lib/data'
@@ -39,12 +38,11 @@ export function About() {
                 className="absolute inset-0 -z-10 translate-x-3 translate-y-3 rounded-3xl border border-primary/40"
               />
 
-              <Image
+              <img
                 src={profile.photo || '/placeholder.svg'}
                 alt={`Foto de ${profile.name}`}
                 width={260}
                 height={320}
-                priority
                 className="h-[280px] w-[240px] rounded-3xl object-cover"
               />
             </div>
@@ -125,12 +123,11 @@ export function About() {
               className="absolute inset-0 -z-10 translate-x-4 translate-y-4 rounded-3xl border border-primary/40"
             />
 
-            <Image
+            <img
               src={profile.photo || '/placeholder.svg'}
               alt={`Foto de ${profile.name}`}
               width={320}
               height={400}
-              priority
               className="h-[420px] w-[340px] rounded-3xl object-cover"
             />
           </div>

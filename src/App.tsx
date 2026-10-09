@@ -5,7 +5,7 @@ import { Projects } from '@/components/projects'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
 
-export default function Page() {
+export default function App() {
   return (
     <div id="inicio" className="min-h-screen">
       <Navbar />

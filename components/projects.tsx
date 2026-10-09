@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { ArrowUpRight } from 'lucide-react'
 import { GithubIcon } from '@/components/brand-icons'
 import { projects } from '@/lib/data'
@@ -24,12 +23,10 @@ export function Projects() {
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-primary/50"
             >
               <div className="relative aspect-video overflow-hidden border-b border-border">
-                <Image
+                <img
                   src={project.image || '/placeholder.svg'}
                   alt={`Vista previa de ${project.title}`}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
